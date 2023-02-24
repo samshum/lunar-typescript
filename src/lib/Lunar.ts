@@ -1031,6 +1031,11 @@ export class Lunar {
         return v ? v : '';
     }
 
+    getXiuPosition(): string {
+        let v = LunarUtil.XIU_POSITION.get(this.getXiu());
+        return v ? v : '';
+    }
+
     getZheng(): string {
         let v = LunarUtil.ZHENG.get(this.getXiu());
         return v ? v : '';
