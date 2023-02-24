@@ -134,13 +134,14 @@ export class HanWuXin{
     private static _wx: Array<string> = ['木','火','土','金','水'];
 
     static getWuXin(str: string): string {
-        var getIndex = 0;
+        var getIndex = 0, isfound=false;
         for(var h in this.zhi){
             if(this.zhi[h].toString().indexOf(str)>=0){
                 getIndex = Number(this.zhi[h][0]);
+                isfound = true;
                 break;
             }
         }
-        return this._wx[getIndex];
+        return isfound?this._wx[getIndex]:'';
     }
 }
