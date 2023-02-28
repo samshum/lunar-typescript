@@ -1,14 +1,14 @@
 # 新增功能：
     - 1. 汉字五行分析，根据汉字返回字的五行信息 
-    ~~~
+    ```
     HanWuXin.getWuXin(string)
-    ~~~
+    ```
     - 2. 太阳时计算功能
-    ~~~
+    ```
     let zt = new ZSunTime(110.322412,21.010346);
     zt.CalculateFromDate(new Date());
     console.log(zt.getTimeDate, zt.getTimeArray, zt.getTimeString);
-    ~~~
+    ```
 
 # lunar [![License](https://img.shields.io/badge/license-MIT-4EB1BA.svg?style=flat-square)](https://github.com/6tail/lunar-typescript/blob/master/LICENSE)
 
